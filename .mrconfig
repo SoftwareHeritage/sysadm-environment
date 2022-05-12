@@ -1,0 +1,13 @@
+# keep the list sorted alphabetically by local repo name
+
+[credentials]
+checkout = git clone 'https://forge.softwareheritage.org/source/credentials' 'credentials'
+
+[swh-apps]
+checkout = git clone 'https://forge.softwareheritage.org/source/swh-apps' 'swh-apps'
+
+[swh-charts]
+checkout = git clone 'https://forge.softwareheritage.org/source/swh-charts' 'swh-charts'
+
+[sysadm-provisioning]
+checkout = git clone 'https://forge.softwareheritage.org/source/swh-sysadmin-provisioning' 'sysadm-provisioning'
