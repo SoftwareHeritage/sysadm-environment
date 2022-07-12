@@ -11,3 +11,6 @@ checkout = git clone 'https://forge.softwareheritage.org/source/swh-charts' 'swh
 
 [sysadm-provisioning]
 checkout = git clone 'https://forge.softwareheritage.org/source/swh-sysadmin-provisioning' 'sysadm-provisioning'
+
+[k8s-clusters-config]
+checkout = git clone 'https://forge.softwareheritage.org/source/k8s-clusters-conf.git' k8s-clusters-config

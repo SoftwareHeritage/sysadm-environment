@@ -1,3 +1,4 @@
 credentials/
 sysadm-provisioning/
 swh-*/
+k8s-clusters-config/
