@@ -14,3 +14,6 @@ checkout = git clone 'https://forge.softwareheritage.org/source/swh-sysadmin-pro
 
 [k8s-clusters-config]
 checkout = git clone 'https://forge.softwareheritage.org/source/k8s-clusters-conf.git' k8s-clusters-config
+
+[k8s-private-data]
+checkout = git clone 'https://forge.softwareheritage.org/source/k8s-swh-private-data.git' k8s-private-data
