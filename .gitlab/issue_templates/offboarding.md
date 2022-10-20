@@ -28,7 +28,7 @@ At the entrance desk, give back:
     - [ ] Change password hash to ‘!’ in the swh-private-data repository
     - [ ] Change shell to /bin/false
     - let puppet push itself :)
-- [ ] phabricator: remove user from groups Developers, Members, - [ ] Interns (if applicable)
+- [ ] phabricator: remove user from groups Developers, Members and Interns (if applicable)
 - [ ] revoke VPN certificate
 - [ ] remove “staff” role (and others) from production and staging user accounts on Keycloak
 
