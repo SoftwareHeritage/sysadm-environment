@@ -41,4 +41,5 @@ At the entrance desk, give back:
 - [ ] unsubscribe from mailing lists: swh-team
 - [ ] uninvite/kick from IRC channels: #swh-team
 
-/cc @teams/sysadmin 
+/cc @teams/sysadmin
+/confidential
