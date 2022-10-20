@@ -29,8 +29,8 @@ At the entrance desk, give back:
     - [ ] Change shell to /bin/false
     - let puppet push itself :)
 - [ ] phabricator: remove user from groups Developers, Members, - [ ] Interns (if applicable)
-  - [ ] revoke VPN certificate
-  - [ ] remove “staff” role (and others) from production and staging user accounts on Keycloak
+- [ ] revoke VPN certificate
+- [ ] remove “staff” role (and others) from production and staging user accounts on Keycloak
 
 ## Development
 
@@ -40,3 +40,6 @@ At the entrance desk, give back:
 
 - [ ] unsubscribe from mailing lists: swh-team
 - [ ] uninvite/kick from IRC channels: #swh-team
+
+/cc @teams/sysadmin
+/confidential
