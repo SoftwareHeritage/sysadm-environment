@@ -4,26 +4,26 @@
 checkout = git clone 'https://forge.softwareheritage.org/source/credentials' 'credentials'
 
 [swh-apps]
-checkout = git clone 'https://gitlab.softwareheritage.org/infra/swh-apps' 'swh-apps'
+checkout = git clone 'https://gitlab.softwareheritage.org/swh/infra/swh-apps.git' 'swh-apps'
 fixups =
-  git remote set-url origin https://gitlab.softwareheritage.org/infra/swh-apps
+  git remote set-url origin https://gitlab.softwareheritage.org/swh/infra/swh-apps.git
 
 [swh-charts]
-checkout = git clone 'https://gitlab.softwareheritage.org/infra/ci-cd/swh-charts' 'swh-charts'
+checkout = git clone 'https://gitlab.softwareheritage.org/swh/infra/ci-cd/swh-charts.git' 'swh-charts'
 fixups =
-  git remote set-url origin https://gitlab.softwareheritage.org/infra/ci-cd/swh-charts
+  git remote set-url origin https://gitlab.softwareheritage.org/swh/infra/ci-cd/swh-charts.git
 
 [sysadm-provisioning]
-checkout = git clone 'https://gitlab.softwareheritage.org/infra/swh-sysadmin-provisioning' 'sysadm-provisioning'
+checkout = git clone 'https://gitlab.softwareheritage.org/swh/infra/swh-sysadmin-provisioning.git' 'sysadm-provisioning'
 fixups =
-  git remote set-url origin https://gitlab.softwareheritage.org/infra/swh-sysadmin-provisioning
+  git remote set-url origin https://gitlab.softwareheritage.org/swh/infra/swh-sysadmin-provisioning.git
 
 [k8s-clusters-config]
-checkout = git clone 'https://gitlab.softwareheritage.org/infra/ci-cd/k8s-clusters-conf' k8s-clusters-config
+checkout = git clone 'https://gitlab.softwareheritage.org/swh/infra/ci-cd/k8s-clusters-conf.git' k8s-clusters-config
 fixups =
-  git remote set-url origin https://gitlab.softwareheritage.org/infra/ci-cd/k8s-clusters-conf
+  git remote set-url origin https://gitlab.softwareheritage.org/swh/infra/ci-cd/k8s-clusters-conf.git
 
 [k8s-private-data]
-checkout = git clone git@gitlab.softwareheritage.org:/infra/ci-cd/k8s-swh-private-data k8s-private-data
+checkout = git clone git@gitlab.softwareheritage.org:/infra-private/k8s-swh-private-data.git k8s-private-data
 fixups =
-  git remote set-url origin git@gitlab.softwareheritage.org:/infra/ci-cd/k8s-swh-private-data.git
+  git remote set-url origin git@gitlab.softwareheritage.org:/infra-private/k8s-swh-private-data.git
