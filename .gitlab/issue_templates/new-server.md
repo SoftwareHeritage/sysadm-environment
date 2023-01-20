@@ -10,9 +10,9 @@ Summary:
 - Internal IP(s): xxx.xxx.xxx.xxx
 - Internal DNS name(s): xxx.internal.(softwareheritage.org|<environment>.swh.network
 
-/todo Declare the servers in the [inventory](https://inventory.softwareheritage.org)
-/todo Add the management info in the credential store
-/todo Install the OS
-/todo Add puppet configuration (if needed)
-/todo Configure firewall rules (if needed)
-/todo <other actions if needed>
+[ ] Declare the servers in the [inventory](https://inventory.softwareheritage.org)
+[ ]  Add the management info in the credential store
+[ ] Install the OS
+[ ] Add puppet configuration (if needed)
+[ ] Configure firewall rules (if needed)
+[ ] <other actions if needed>
