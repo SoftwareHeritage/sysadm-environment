@@ -13,6 +13,9 @@ checkout = git clone 'https://gitlab.softwareheritage.org/swh/infra/ci-cd/swh-ch
 fixups =
   git remote set-url origin https://gitlab.softwareheritage.org/swh/infra/ci-cd/swh-charts.git
 
+[swh-ipxe]
+checkout = git clone 'https://gitlab.softwareheritage.org/swh/infra/ipxe.git' swh-ipxe
+
 [sysadm-provisioning]
 checkout = git clone 'https://gitlab.softwareheritage.org/swh/infra/swh-sysadmin-provisioning.git' 'sysadm-provisioning'
 fixups =
