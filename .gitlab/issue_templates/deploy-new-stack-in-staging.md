@@ -5,7 +5,8 @@
 /label ~"activity::deployment"
 
 - [ ] swh-apps: Build image (if required)
-- [ ] swh-charts: Bump values to the new version ^
+- [ ] swh-charts: Reference new image (if required)
+- [ ] swh-charts: Adapt values to reference the new lister and loader
 - [ ] Deploy
 - [ ] Checks
 
