@@ -2,6 +2,8 @@
 
 /milestone %<milestone>
 
+/label ~"activity::deployment"
+
 - [ ] swh-apps: Build image (if required)
 - [ ] swh-charts: Bump values to the new version ^
 - [ ] Deploy
