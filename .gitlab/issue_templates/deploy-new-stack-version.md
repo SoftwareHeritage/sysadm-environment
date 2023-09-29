@@ -14,8 +14,8 @@ staging:
 production:
 - [ ] Merge 'staging' branch into 'production' (it should/must be a fast-forward)
 - [ ] Push branch 'production' && Let argocd deploy and do its job
-- [ ] Checks pods are doing their jobs without crashing
 - [ ] Tag grafana with "deployment service=<service> service=<service2> ... environment=production" [1] [2]
+- [ ] Checks pods are doing their jobs without crashing
 
 [1] https://grafana.softwareheritage.org/goto/e-c3EAWIz?orgId=1
 
