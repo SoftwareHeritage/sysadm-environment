@@ -1,6 +1,6 @@
 /title Install the new bare metal server(s) for <project>
 
-/milestone %<milestone>
+/milestone %"MRO 2023"
 
 Orders: <link to the mybox directory containing the order/delivery orders/...>
 
@@ -15,9 +15,9 @@ Summary:
 - Internal DNS name(s): xxx.internal.(softwareheritage.org|<environment>.swh.network
 
 Tasks:
-- [ ] Declare the servers in the [inventory](https://inventory.softwareheritage.org)
-- [ ]  Add the management info in the credential store
+- [ ] Declare the servers in the [inventory](https://inventory.internal.admin.swh.network)
+- [ ] Add the management info in the credential store
 - [ ] Install the OS
 - [ ] Add puppet configuration (if needed)
 - [ ] Configure firewall rules (if needed)
-- [ ] <other actions if needed>
+- [ ] (other actions if needed, drop unneeded actions)
