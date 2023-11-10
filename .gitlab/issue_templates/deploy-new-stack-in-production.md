@@ -10,6 +10,7 @@ drop the unneeded actions from the plan.
 - [ ] [swh-charts](https://gitlab.softwareheritage.org/swh/infra/ci-cd/swh-charts/-/blob/production/swh/values/production.yaml?ref_type=heads#L126): Checkout production branch
 - [ ] [swh-charts](https://gitlab.softwareheritage.org/swh/infra/ci-cd/swh-charts/-/blob/production/swh/values/production.yaml?ref_type=heads#L143): Adapt values to reference the new lister and loader (equivalent to what was done for staging)
 - [ ] Deploy (push branch and let argocd do its job)
+- [ ] scheduler: Connect to toolbox pod & register new scheduler task types (if required)
 - [ ] Tag grafana with "deployment service=loader-<project> service=<lister-project> environment=production" [1]
 - [ ] Checks pods are doing their jobs
 
