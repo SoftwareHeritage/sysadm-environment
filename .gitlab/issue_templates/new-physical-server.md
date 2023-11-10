@@ -2,6 +2,8 @@
 
 /milestone %"MRO 2023"
 
+/labels ~"activity::Deployment"
+
 Orders: <link to the mybox directory containing the order/delivery orders/...>
 
 Inventory: <link to the inventory page>

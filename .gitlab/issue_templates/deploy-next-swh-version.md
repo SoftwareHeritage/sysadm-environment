@@ -2,7 +2,8 @@
 
 /milestone %"MRO 2023"
 
-/label ~"activity::deployment"
+/labels ~"activity::Deployment"
+
 
 Actions:
 - [ ] Tags all impacted modules

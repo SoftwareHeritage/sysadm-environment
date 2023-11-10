@@ -1,8 +1,9 @@
 /title production: Deploy new <project> stack
 
-/milestone %<milestone>
+/milestone %"Extend archive coverage [Roadmap - Collect]"
 
-/label ~"activity::deployment"
+/labels ~"activity::Deployment"
+
 
 - [ ] [swh-charts](https://gitlab.softwareheritage.org/swh/infra/ci-cd/swh-charts/-/blob/production/swh/values/production.yaml?ref_type=heads#L126): Checkout production branch
 - [ ] [swh-charts](https://gitlab.softwareheritage.org/swh/infra/ci-cd/swh-charts/-/blob/production/swh/values/production.yaml?ref_type=heads#L143): Adapt values to reference the new lister and loader (equivalent to what was done for staging)

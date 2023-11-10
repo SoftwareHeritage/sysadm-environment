@@ -1,8 +1,10 @@
 /title Deploy new <project> <version>
 
-/milestone %<milestone>
+/milestone %"MRO 2023"
 
-/label ~"activity::deployment"
+/labels ~"activity::Deployment"
+
+
 
 staging:
 - [ ] [swh-apps](https://gitlab.softwareheritage.org/swh/infra/swh-apps/-/tree/master/apps?ref_type=heads): Build image (if required because of new deps for example)
