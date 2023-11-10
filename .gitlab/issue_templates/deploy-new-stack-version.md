@@ -4,6 +4,8 @@
 
 /labels ~"activity::Deployment"
 
+*Note* This proposes a plan to deploy a new version for a given stack (Arch
+Linux, AUR, ...). Please, drop the unneeded actions from the plan.
 
 
 staging:

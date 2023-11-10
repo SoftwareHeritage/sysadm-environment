@@ -4,6 +4,8 @@
 
 /labels ~"activity::Deployment"
 
+*Note* This proposes a plan to deploy the new stack in production. Please,
+drop the unneeded actions from the plan.
 
 - [ ] [swh-charts](https://gitlab.softwareheritage.org/swh/infra/ci-cd/swh-charts/-/blob/production/swh/values/production.yaml?ref_type=heads#L126): Checkout production branch
 - [ ] [swh-charts](https://gitlab.softwareheritage.org/swh/infra/ci-cd/swh-charts/-/blob/production/swh/values/production.yaml?ref_type=heads#L143): Adapt values to reference the new lister and loader (equivalent to what was done for staging)

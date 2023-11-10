@@ -4,6 +4,8 @@
 
 /labels ~"activity::Deployment"
 
+*Note* This proposes a plan to deploy the next swh version. Please, drop the
+unneeded actions from the plan.
 
 Actions:
 - [ ] Tags all impacted modules
