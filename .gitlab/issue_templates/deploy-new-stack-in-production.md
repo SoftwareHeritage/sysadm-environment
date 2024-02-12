@@ -7,12 +7,16 @@
 *Note* This proposes a plan to deploy the new stack in production. Please,
 drop the unneeded actions from the plan.
 
-- [ ] [swh-charts](https://gitlab.softwareheritage.org/swh/infra/ci-cd/swh-charts/-/blob/production/swh/values/production.yaml?ref_type=heads#L126): Checkout production branch
-- [ ] [swh-charts](https://gitlab.softwareheritage.org/swh/infra/ci-cd/swh-charts/-/blob/production/swh/values/production.yaml?ref_type=heads#L143): Adapt values to reference the new lister and loader (equivalent to what was done for staging)
-- [ ] Deploy (push branch and let argocd do its job)
+production:
+- [ ] [swh-charts](https://gitlab.softwareheritage.org/swh/infra/ci-cd/swh-charts/-/blob/production/swh/values/production/swh.yaml#L501): Checkout staging branch, adapt values to reference the new lister and loaders (if any)
+- [ ] Checkout production branch and merge staging branch (they should be aligned)
+- [ ] Deploy (push production branch and let argocd do its job)
 - [ ] scheduler: Connect to toolbox pod & register new scheduler task types (if required)
-- [ ] Tag grafana with "deployment service=loader-<project> service=<lister-project> environment=production" [1]
-- [ ] Checks pods are doing their jobs
+- [ ] Tag grafana with "deployment service=loader-<project> service=<lister-project> environment=staging" [1]
+- [ ] Checks
+  - [ ] pod images are pulled correctly
+  - [ ] pods are running without issues (rpc starts, celery workers consume messages, ...)
+
 
 Dashboard to follow [1]
 
