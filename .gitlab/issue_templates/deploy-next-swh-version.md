@@ -23,7 +23,7 @@ staging:
 - [ ] Let argocd deploy
 - [ ] Tag grafana with "deployment service=<service> service=<service2> ... environment=staging" [1] [2]
 - [ ] Checks
-  - [ ] webapp, storage, scheduler, ...: If model version upgrade, check the migration happens appropriately
+  - [ ] Check model version upgrade (e.g. webapp, scheduler, storage primary, storage secondary replica, ...)
   - [ ] pod images are pulled correctly
   - [ ] pods are running without issues (rpc starts, celery workers consume messages, ...)
 
@@ -32,6 +32,6 @@ production:
 - [ ] Let argocd deploy
 - [ ] Tag grafana with "deployment service=<service> service=<service2> ... environment=production" [1] [2]
 - [ ] Checks
-  - [ ] webapp, storage, scheduler, ...: If model version upgrade, check the migration happens appropriately
+  - [ ] Check model version upgrade (e.g. webapp, scheduler, storage primary, storage secondary replica, ...)
   - [ ] pod images are pulled correctly
   - [ ] pods are running without issues (rpc starts, celery workers consume messages, ...)
