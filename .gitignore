@@ -3,3 +3,4 @@ sysadm-provisioning/
 swh-*/
 k8s-clusters-config/
 k8s-private-data/
+/objstorage-ansible/

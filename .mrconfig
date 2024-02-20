@@ -30,3 +30,6 @@ fixups =
 checkout = git clone git@gitlab.softwareheritage.org:/infra-private/k8s-swh-private-data.git k8s-private-data
 fixups =
   git remote set-url origin git@gitlab.softwareheritage.org:/infra-private/k8s-swh-private-data.git
+
+[objstorage-ansible]
+checkout = git clone git@gitlab.softwareheritage.org:/infra-private/objstorage-ansible.git -b swh
