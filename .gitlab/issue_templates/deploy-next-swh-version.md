@@ -1,37 +1,34 @@
-/title Deploy next swh version
-
-/milestone %"MRO 2023"
-
 /labels ~"activity::Deployment"
 
-*Note* This proposes a plan to deploy the next swh version. Please, drop the
-unneeded actions from the plan.
+*Note* This proposes a plan to deploy the next swh version. Note that we usually
+manually name the issue "Deploy next swh version $version". Prior to actually create the
+issue, drop the unneeded actions from the plan.
 
 Actions:
 - [ ] Tags all impacted modules
 
 Includes:
-- <insert-new-version-packages-with-small-summary>
+- $insert-new-version-packages-with-small-summary$
 - ...
 
 Dependency:
-- <insert-blocking-dependency>
+- $insert-blocking-dependency-if-any$
 - ...
 
 staging:
-- [ ] <insert-mr-link> swh-charts: Merge new versions
+- [ ] $insert-mr-link$: swh-charts: Merge new version(s)
 - [ ] Let argocd deploy
-- [ ] Tag grafana with "deployment service=<service> service=<service2> ... environment=staging" [1] [2]
+- [ ] Tag grafana with "deployment environment=staging service=$service1$ service=$service2$"
 - [ ] Checks
-  - [ ] Check model version upgrade (e.g. webapp, scheduler, storage primary, storage secondary replica, ...)
-  - [ ] pod images are pulled correctly
-  - [ ] pods are running without issues (rpc starts, celery workers consume messages, ...)
+  - [ ] Check model version upgrade if any (e.g. webapp, scheduler, storage primary, storage secondary replica, ...)
+  - [ ] Check pod images are pulled correctly
+  - [ ] Check pods are running without issues (rpc starts, celery workers consume messages, ...)
 
 production:
 - [ ] swh-charts: Merge staging branch into production
 - [ ] Let argocd deploy
-- [ ] Tag grafana with "deployment service=<service> service=<service2> ... environment=production" [1] [2]
+- [ ] Tag grafana with "deployment environment=production service=$service1$ service=$service2$"
 - [ ] Checks
-  - [ ] Check model version upgrade (e.g. webapp, scheduler, storage primary, storage secondary replica, ...)
-  - [ ] pod images are pulled correctly
-  - [ ] pods are running without issues (rpc starts, celery workers consume messages, ...)
+  - [ ] Check model version upgrade if any (e.g. webapp, scheduler, storage primary, storage secondary replica, ...)
+  - [ ] Check pod images are pulled correctly
+  - [ ] Check pods are running without issues (rpc starts, celery workers consume messages, ...)
