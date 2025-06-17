@@ -1,7 +1,7 @@
 /labels ~"activity::MRO"
 
 staging:
-- [ ] client: They need to create their staging account in the staging keycloak realm
+- [ ] client: They need to create their account in the staging keycloak realm
 - [ ] client: `client-login`
 - [ ] Awaiting domain and provider url from client: `<ask-client>`
 - [ ] Add `swh.deposit.api` role to user in keycloak in staging realm
@@ -9,10 +9,10 @@ staging:
 - [ ] Ask client whether the deposit access is ok
 
 production:
-- [ ] client: They need to create their staging account in the staging keycloak realm
+- [ ] client: They need to create their account in the production keycloak realm
 - [ ] client: `client-login`
 - [ ] Awaiting domain and provider url from client: `<ask-client>`
-- [ ] Add `swh.deposit.api` role to user in keycloak in staging realm
+- [ ] Add `swh.deposit.api` role to user in keycloak in production realm
 - [ ] deposit db: Create deposit api collection & client [2] (same as staging)
 - [ ] Ask client whether the deposit access is ok
 
