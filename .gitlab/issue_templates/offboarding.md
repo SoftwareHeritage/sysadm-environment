@@ -19,27 +19,25 @@ It is hence time to start the offboarding procedure, see https://docs.softwarehe
 At the entrance desk, give back:
 
 - [ ] Inria access badge and office keys
-- [ ] cantine card
+- [ ] Cantine card
 
 ## Technical setup
 
-- [ ] lock *nix account on project machines
+- [ ] Lock *nix account on project machines
   - [ ] Edit puppet data for the user
     - [ ] Change password hash to ‘!’ in the swh-private-data repository
     - [ ] Change shell to /bin/false
     - let puppet push itself :)
-- [ ] phabricator: remove user from groups Developers, Members and Interns (if applicable)
-- [ ] revoke VPN certificate
-- [ ] remove “staff” role (and others) from production and staging user accounts on Keycloak
+- [ ] Gitlab: remove user from groups Developers, Members and Interns (if applicable)
+- [ ] Revoke VPN certificate
+- [ ] Remove “staff” role (and others) from production and staging user accounts on Keycloak
 
 ## Development
 
-- [ ] review open and assigned tasks in Phabricator and unassign them as needed.
-
+- [ ] Gitlab: Unassign tasks if any
 - [ ] Communication
-
-- [ ] unsubscribe from mailing lists: swh-team
-- [ ] uninvite/kick from IRC channels: #swh-team
+  - [ ] Unsubscribe from mailing lists: swh-team
+  - [ ] Uninvite from Matrix channels: #swh-team
 
 /cc @teams/sysadmin
 /confidential
