@@ -1,16 +1,16 @@
 # Summary
 
-*more info here if needed*
-
 ***Don't forget to specify the due date if any***
 
-Name: *Add Name here*
+- Name: *Add Name here*
 
-Phabricator user name: *Add the phabricator username here*
+- Gitlab user name: *Add the phabricator username here*
 
-IRC nickname: *if any*
+- Matrix login: *if any*
 
-It is hence time to start the offboarding procedure, see https://docs.softwareheritage.org/sysadm/user-management/outboarding.html
+It is hence time to start the offboarding procedure [1]
+
+[1] https://docs.softwareheritage.org/sysadm/user-management/outboarding.html
 
 # Checklist
 
