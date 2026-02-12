@@ -1,7 +1,7 @@
 # keep the list sorted alphabetically by local repo name
 
 [credentials]
-checkout = git clone 'https://forge.softwareheritage.org/source/credentials' 'credentials'
+checkout = git clone 'https://gitlab.softwareheritage.org/swh/infra/credentials.git' 'credentials'
 
 [swh-apps]
 checkout = git clone 'https://gitlab.softwareheritage.org/swh/infra/swh-apps.git' 'swh-apps'
