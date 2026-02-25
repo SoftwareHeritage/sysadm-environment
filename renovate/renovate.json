@@ -1,0 +1,86 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+
+  "_comment_global": "Main Renovate configuration with recommended settings",
+  "extends": ["config:recommended"],
+  "onboarding": true,
+  "_comment_dashboard": "Settings for dependency dashboard and PR behavior",
+  "dependencyDashboard": true,
+  "dependencyDashboardOSVVulnerabilitySummary": "all",
+  "automerge": false,
+  "draftPR": true,
+  "fetchChangeLogs": "pr",
+  "separateMajorMinor": true,
+  "separateMinorPatch": true,
+  "separateMultipleMajor": true,
+  "separateMultipleMinor": true,
+  "_comment_commits": "Enable semantic commits for PRs",
+  "semanticCommits": "enabled",
+  "_comment_kubernetes": "Specific settings for kubernetes manager, match only LAMP folder",
+  "kubernetes": {
+    "fileMatch": ["**\\.ya?ml$"]
+  },
+  "dockerfile":{
+    "enabled": true
+  },
+  "_comment_package_rules": "Rules to customize updates and grouping per manager or update type",
+  "packageRules": [
+    {
+      "_comment": "Set semantic commit type for major updates",
+      "matchUpdateTypes": ["major"],
+      "semanticCommitType": "majorUpdate "
+    },
+    {
+      "_comment": "Set semantic commit type for minor updates",
+      "matchUpdateTypes": ["minor"],
+      "semanticCommitType": "minorUpdate "
+    },
+    {
+      "_comment": "Set semantic commit type for patch updates",
+      "matchUpdateTypes": ["patch"],
+      "semanticCommitType": "patch "
+    },
+    {
+      "_comment": "Group dockerfile updates with commit scope",
+      "matchManagers": ["dockerfile"],
+      "semanticCommitScope": "docker",
+      "groupName": "dockerfile"
+    },
+    {
+      "_comment": "Group pip_requirements updates with commit scope",
+      "matchManagers": ["pip_requirements"],
+      "semanticCommitScope": "pip_requirements",
+      "groupName": "pip_requirements"
+    },
+    {
+      "_comment": "Group helm updates with commit scope",
+      "matchManagers": ["helm-values"],
+      "semanticCommitScope": "helm-values",
+      "groupName": "helm"
+    },
+    {
+      "_comment": "Group kubernetes updates with commit scope",
+      "matchManagers": ["kubernetes"],
+      "semanticCommitScope": "kubernetes",
+      "groupName": "kubernetes"
+    }
+  ],
+  "_comment_limits": "Limits on PR concurrency and stability",
+  "prConcurrentLimit": 0,
+  "prHourlyLimit": 0,
+  "stabilityDays": 0,
+  "_comment_pr_notes": "Notes added to PR body for major updates",
+  "prBodyNotes": [
+    "{{#if isMajor}}BREAKING CHANGE – MAJOR UPDATE{{/if}}"
+  ],
+  "_comment_commit_message": "Template for extra commit message info",
+  "commitMessageExtra": "to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}",
+  "_comment_pr_columns": "Columns to display in PRs",
+  "prBodyColumns": [
+    "Package", "Type", "Update", "Current value", "New value",
+    "Change", "Pending", "References", "Package file",
+    "Age", "Adoption", "Passing", "Confidence"
+  ],
+  "_comment_pr_template": "Full PR body template combining table, notes, changelogs, and controls",
+  "prBodyTemplate": "{{{header}}}{{{table}}}{{{warnings}}}{{{notes}}}{{{changelogs}}}{{{configDescription}}}{{{controls}}}{{{footer}}}"
+}
