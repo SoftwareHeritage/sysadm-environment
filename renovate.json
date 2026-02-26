@@ -3,7 +3,6 @@
 
   "_comment_global": "Main Renovate configuration with recommended settings",
   "extends": ["config:recommended"],
-  "onboarding": true,
   "_comment_dashboard": "Settings for dependency dashboard and PR behavior",
   "dependencyDashboard": true,
   "dependencyDashboardOSVVulnerabilitySummary": "all",
@@ -20,9 +19,7 @@
   "kubernetes": {
     "fileMatch": ["**\\.ya?ml$"]
   },
-  "dockerfile":{
-    "enabled": true
-  },
+  "enabledManagers": ["dockerfile"],
   "_comment_package_rules": "Rules to customize updates and grouping per manager or update type",
   "packageRules": [
     {
