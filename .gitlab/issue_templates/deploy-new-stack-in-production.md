@@ -1,7 +1,5 @@
 /title production: Deploy new <project> stack
 
-/milestone %"Extend archive coverage [Roadmap - Collect]"
-
 /labels ~"activity::Deployment"
 
 *Note* This proposes a plan to deploy the new stack in production. Please,

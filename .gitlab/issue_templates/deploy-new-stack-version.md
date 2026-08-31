@@ -1,7 +1,5 @@
 /title Deploy new <project> <version>
 
-/milestone %"MRO 2023"
-
 /labels ~"activity::Deployment"
 
 *Note* This proposes a plan to deploy a new version for a given stack (Arch

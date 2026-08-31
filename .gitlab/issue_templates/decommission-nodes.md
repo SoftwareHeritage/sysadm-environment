@@ -1,5 +1,4 @@
 /title Decommission node(s) \
-/milestone %<milestone>
 
 Inventory: <link to the inventory page>
 
